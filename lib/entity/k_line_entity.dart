@@ -10,6 +10,8 @@ class KLineEntity extends KEntity {
   double? change;
   double? ratio;
   int? time;
+  bool? hasBuy;
+  bool? hasSell;
 
   KLineEntity.fromCustom({
     this.amount,
@@ -21,6 +23,8 @@ class KLineEntity extends KEntity {
     required this.high,
     required this.low,
     required this.vol,
+    this.hasSell,
+    this.hasBuy,
   });
 
   KLineEntity.fromJson(Map<String, dynamic> json) {
