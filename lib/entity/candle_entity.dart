@@ -4,6 +4,8 @@ mixin CandleEntity {
   late double high;
   late double low;
   late double close;
+  bool? hasBuy;
+  bool? hasSell;
 
   List<double>? maValueList;
 
